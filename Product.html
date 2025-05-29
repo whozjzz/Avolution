@@ -6,6 +6,7 @@
   <title>Avolution - Product</title>
   <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="product.css" />
+  <script src="product.js" defer></script>
 </head>
 <body>
   <!-- Navbar -->
@@ -14,12 +15,11 @@
       <img src="AvolutionLogo.png" alt="Avolution Logo" class="logo-img" />
       <span class="logo-text">Avolution</span>
     </a>
-
     <ul class="navbar-menu">
       <li><a href="index.html">Home</a></li>
-      <li><a href="Product.html" class="active">Products</a></li>
-      <li><a href="About.html">About</a></li>
-      <li><a href="Contact.html">Contact</a></li>
+      <li><a href="product.html" class="active">Products</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
     </ul>
   </div>
 
@@ -31,15 +31,18 @@
 
       <article class="product-card single-product">
         <img src="Product1.png" alt="Classic Avocado Seed Chopping Board" />
-        <p class="price">₱250.00</p>
-        <ul class="specs">
-      <li>Material: Avocado Seed Bioplastic</li>
-      <li>Size: 12in x 8in</li>
-      <li>Weight: 600g</li>
-      <li>Heat Resistant</li>
-      <li>Anti-bacterial Surface</li>
-    </ul>
-        <button class="btn-buy">Buy Now</button>
+        <div class="product-info">
+          <h2>Avocado Seed Chopping Board</h2>
+          <ul class="specs">
+            <li>Material: Avocado Seed Bioplastic</li>
+            <li>Size: 12in x 8in</li>
+            <li>Weight: 600g</li>
+            <li>Heat Resistant</li>
+            <li>Anti-bacterial Surface</li>
+          </ul>
+          <p class="price">₱250.00</p>
+          <button class="btn-buy">Buy Now</button>
+        </div>
       </article>
     </section>
   </main>
@@ -57,7 +60,5 @@
       </div>
     </div>
   </div>
-
-  <script src="product.js"></script>
 </body>
 </html>

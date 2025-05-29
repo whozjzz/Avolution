@@ -1,6 +1,6 @@
 // Get modal elements
 const modal = document.getElementById('orderModal');
-const openBtn = document.querySelector('.btn-buy'); // assumes single Buy Now button on page
+const openBtn = document.querySelector('.btn-buy');
 const closeBtn = document.querySelector('.close-button');
 const cancelBtn = document.getElementById('cancelOrderBtn');
 const confirmBtn = document.getElementById('confirmOrderBtn');
