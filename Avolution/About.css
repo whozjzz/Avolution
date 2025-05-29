@@ -1,0 +1,160 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+  font-family: 'Quicksand', sans-serif;
+  background-color: #2e3d20; /* dark avocado tone */
+  color: #dce2cc;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #3c503b; /* deep green */
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  width: 100%;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  gap: 0.5rem;
+}
+
+.logo-img {
+  height: 80px; /* Adjust size as needed */
+  width: auto;
+  object-fit: contain;
+}
+
+/* Navbar Menu */
+.navbar-menu {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.navbar-menu li a {
+  text-decoration: none;
+  color: #dce2cc;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.navbar-menu li a:hover,
+.navbar-menu li a.active {
+  background-color: #6a7c5e; /* muted green */
+  color: white;
+}
+
+/* Main Content */
+main.main-content {
+  max-width: 1000px;
+  width: 100%;
+  padding: 3rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+/* Container to hold left and right columns */
+.about-section {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 2rem;
+  width: 100%;
+}
+
+/* Left column for Vision and Mission */
+.about-left {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  flex: 1 1 55%;
+}
+
+/* Right column for Core Values */
+.about-right {
+  flex: 1 1 40%;
+  display: flex;
+}
+
+/* Boxed Sections */
+.about-vision,
+.about-mission,
+.about-values {
+  background-color: #cdeac0;
+  color: #2e3d20;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+  width: 100%;
+}
+
+.about-vision:hover,
+.about-mission:hover,
+.about-values:hover {
+  box-shadow: 0 8px 14px rgba(0, 0, 0, 0.15);
+}
+
+/* Headings */
+.about-vision h2,
+.about-mission h2,
+.about-values h2 {
+  font-size: 1.6rem;
+  color: #3c503b;
+  margin-bottom: 1rem;
+  border-left: 4px solid #6a7c5e;
+  padding-left: 0.75rem;
+}
+
+/* Paragraphs */
+.about-vision p,
+.about-mission p,
+.about-values p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #3c503b;
+}
+
+/* Responsive Design */
+@media (max-width: 900px) {
+  .about-section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-left,
+  .about-right {
+    width: 100%;
+  }
+}
+
+.logo-text {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #e6f0d6; /* soft avocado flesh */
+}
+
+
